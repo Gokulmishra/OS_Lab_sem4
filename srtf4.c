@@ -132,7 +132,7 @@ void makeRQ()
 
 int main()
 {
-	int i,j,avgTT=0,avgWT=0,totalWT=0,totalTT=0;
+	int i,j,avgTT=0,avgWT=0,totalWT=0,totalTT=0,maxAT=0;
 	printf("Specify total no. of processes: ");
 	scanf("%d",&pn);
 	printf("Now Enter Process Details bt and at\n");
@@ -141,6 +141,8 @@ int main()
 		P[i].pid = i+1;
 		printf("enter arrival time for process %d :\n",P[i].pid );
 		scanf("%d",&P[i].at);
+		if(P[i].at > maxAT)
+			maxAT=P[i].at;
 		printf("enter burst time for process %d :",P[i].pid);
 		scanf("%d",&P[i].bt);
 		P[i].ct=0;
@@ -155,7 +157,7 @@ int main()
 		else if(rn==pn)
 			executeFull(RQ);
 		cputime++;
-	}while(startRQ<rn);
+	}while(startRQ<rn || (cputime <= maxAT));
 
 	sortByPid(RQ,0,rn);
 	for(i=0;i<pn;i++)
