@@ -147,7 +147,6 @@ void sortByBt(process a[],int start,int end)
 			else if((a[i].bt == a[j].bt) && (i!=j) && (a[i].bt!=0))
 			{
 				compareAndSortByAt(&a[i],&a[j]);
-				return;
 			}
 		}
 	}
