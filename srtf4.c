@@ -1,5 +1,16 @@
 #include<stdio.h>
 
+/* Although Logically incorrect but
+ * still I feel that this piece of code
+ * can be used for learning purpose
+ * such as debugging it,
+ * treat it as correct one and start debigging
+ * 
+ * Tutors may use it as a problem code
+ * like by not telling them what's wrong in code
+ * and asking students to rectify it.
+ */
+
 typedef struct 
 {
 	int pid,bt,at,ct,tt,wt;
