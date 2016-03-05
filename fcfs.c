@@ -111,8 +111,8 @@ int main(){
 	}
 	printf("\n");
 	displayAll(P,0,n);
-	avgTT=(float)totalTT/pn;/* average Turnaround time calculation*/
-	avgWT=(float)totalWT/pn;/* average Waiting time calculation*/
+	avgTT=(float)totalTT/n;/* average Turnaround time calculation*/
+	avgWT=(float)totalWT/n;/* average Waiting time calculation*/
 	printf("\nAverage TurnAround Time : %.2f",avgTT);
 	printf("\nAverage Waiting time: %.2f\n",avgWT);
 
