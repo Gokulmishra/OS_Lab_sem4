@@ -152,14 +152,8 @@ void sortByBt(process a[],int start,int end)
 	}
 }
 
-/*This is another hero :- execute Shortest Job in Q
- * it will EXECUTE process pointed by StartRQ
- * FOR 1 Time UNIT only
- *Execution is simply done by reducing burst time by one
- *
- *and note the completion time if process gets finishes after being executed
- * it is cputime  + 1 due to the way cputime is incremented 
- * in main program
+/*Execution Module:
+ * will execute only single process
  */
 
 void executeOneSJ(process a[])
